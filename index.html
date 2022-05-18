@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Movies catalog</title>
+</head>
+<body>
+
+    <div class="container bg-danger bg-opacity-50">
+        <div class="">
+            <h1 class="text-center fw-bold">Movies Catalog</h1>
+        </div>
+
+        <div class="row p-3">
+            <div class="col-4">
+                <form action="https://echo.htmlacademy.ru/" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label d-none"></label>
+                        <input type="text" class="form-control" id="name" placeholder="ave" name="user_name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="vidio" class="form-label d-none"></label>
+                        <input type="text" class="form-control" id="vidio" placeholder="5" name="user_vidio">
+                    </div>
+
+                    <select class="form-select mb-3" aria-label="Default select example" name="user_film">
+                        <option selected>All</option>
+                        <option value="serial">Serial</option>
+                        <option value="melodrama">Melodrama</option>
+                        <option value="comedy">Comedy</option>
+                    </select>
+
+                    <select class="form-select mb-3" aria-label="Default select example" name="user_chast">
+                        <option selected>Rating (high to low)</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+
+                    <div class="d-grid gap-2">
+                        <button class="mb-3 btn btn-primary" type="submit">Search</button>
+                    </div>
+                </form>
+
+                <h2 class="fw-bold">Bookmarked movies</h2>
+                <div class="card rounded-0">
+                    <div class="card-body">
+                        <p class="card-text m-0 my-1 fw-bold">Avengers: Infinity War</p>
+                        <a href="#" class="btn btn-primary">Remove</a>
+                    </div>
+                </div>
+
+                <div class="card rounded-0">
+                    <div class="card-body">
+                        <p class="card-text m-0 my-1 fw-bold">The Avengers</p>
+                        <a href="#" class="btn btn-primary">Remove</a>
+                    </div>
+                </div>
+
+                <div class="card rounded-0">
+                    <div class="card-body">
+                        <p class="card-text m-0 my-1 fw-bold">12 Years a Slave</p>
+                        <a href="#" class="btn btn-primary">Remove</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-8">
+                <h4 class="fw-bold">Search results: 39</h4>
+                <div class="text-bg-info mb-3 p-3">Info with contrasting color</div>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card">
+                            <img src="./images/avangers.jpg" class="card-img-top" alt="photo_avangers">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Avangers:Infinity War</h4>
+
+                                <div class="d-flex align-items-center mb-3">
+                                    <img class="me-2" src="./images/movies.svg" alt="photo_data" width="20" height="20">
+                                    <span>2018</span>
+                                </div>
+
+                                <div class="align-items-center mb-3">
+                                    <img class="me-2" src="./images/star.png" alt="photo_star" width="20" height="20">
+                                    <span>8.7</span>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <button type="button" class="btn btn-outline-primary">Watch tralier</button>
+                                    <button type="button" class="btn btn-outline-info">More info</button>
+                                    <button type="button" class="btn btn-outline-success">Bookmap</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="card">
+                            <img src="./images/avangers.jpg" class="card-img-top" alt="photo_avangers">
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">The Avengers</h4>
+
+                                <div class="d-flex align-items-center mb-3">
+                                    <img class="me-2" src="./images/movies.svg" alt="photo_data" width="20" height="20">
+                                    <span>2012</span>
+                                </div>
+
+                                <div class="align-items-center mb-3">
+                                    <img class="me-2" src="./images/star.png" alt="photo_star" width="20" height="20">
+                                    <span>8.1</span>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <button type="button" class="btn btn-outline-primary">Watch tralier</button>
+                                    <button type="button" class="btn btn-outline-info">More info</button>
+                                    <button type="button" class="btn btn-outline-success">Bookmap</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination d-flex justify-content-center mt-5">
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    </div>
+</body>
+</html>
